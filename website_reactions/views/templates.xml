@@ -14,7 +14,7 @@
 
         <!-- Reactions panel in post -->
         <template id="post_reactions" name="Blog Post Reactions">
-            <t t-set="this_post_reactions" t-value="blog_post.reaction_ids.reactions_per_post()[blog_post.id]" />
+            <t t-set="this_post_reactions" t-value="blog_post.reaction_ids.reactions_per_post().get(blog_post.id)" />
             <t t-set="user_reaction" t-value="blog_post.reaction_ids.filtered(lambda r: r.user_id.id == r.env.user.id)" />
             <t t-if="not user_reaction">
                 <ul class="reactions">
