@@ -26,7 +26,7 @@
     'author': "menecio",
     'website': "https://www.menecio.me",
     'category': 'website',
-    'version': '0.1',
+    'version': '0.1.1',
 
     'depends': ['website_blog'],
 
