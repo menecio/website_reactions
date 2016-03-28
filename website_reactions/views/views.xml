@@ -8,7 +8,7 @@
         </record>
         
         <menuitem name="Reactions" id="menu_post_reactions" sequence="30" 
-                  parent="website_blog.menu_website_blog_root"
+                  parent="website_blog.menu_wiki"
                   action="action_post_reactions"/>
         
         <record model="ir.ui.view" id="post_reactions_list">
